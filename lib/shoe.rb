@@ -4,7 +4,7 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   def initialize(brand)
     @brand = brand 
-    BRANDS << brand
+    BRANDS << brand unless BRAND.include?(brand)
   end   
 end   
 
