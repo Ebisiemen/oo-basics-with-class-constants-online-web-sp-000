@@ -1,27 +1,16 @@
-require 'pry'
-class Shoe
+class Shoe 
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
   
-  BRANDS = [ ]
+  BRANDS = []
   
   def initialize(brand)
-    @brand = brand
+    @brand = brand 
     BRANDS << brand unless BRANDS.include?(brand)
-  end
-
+  end   
+  
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  
-  def brand=(brand)
-    @brand = brand 
-  end   
-  
-  def self.all
-    BRANDS
-  end
-end
-
-
+end   
