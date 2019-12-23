@@ -1,6 +1,5 @@
 class Shoe 
   BRANDS = []
-  attr_accessor :brand 
   
   def brand=(brand)
     @brand = brand 
